@@ -1,12 +1,12 @@
 import React from "react";
 
-const Categorias = () => {
+const Inicio = () => {
   return (
     <div style={{ minHeight: '100vh' }}>{/* TODO: Solo para efectos del cascaron, quitar este estilo cuando se maquete la pagina */}
-      <h1>Página de Categorías</h1>
+      <h1 className="title">Página de Inicio</h1>
       {/* Contenido principal aquí */}
     </div>
   );
 };
 
-export default Categorias;
+export default Inicio;
