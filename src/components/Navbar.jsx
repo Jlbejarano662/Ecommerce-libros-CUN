@@ -7,7 +7,7 @@ const Navbar = () => {
       <div className="navbar-logo">Libros CUN</div>
       <ul className="navbar-links">
         <li><Link to="/">Inicio</Link></li>
-        <li><Link to="/categorias">Categorias</Link></li>
+        <li><Link to="/servicios">Servicios</Link></li>
         <li><Link to="/contactenos">Contactenos</Link></li>
       </ul>
     </nav>

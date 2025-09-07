@@ -1,12 +1,11 @@
-.categorias {
-  min-height: 100vh;
+.servicios {
   background: #fff;
   padding: 3rem 0;
 }
 
 
 /* Filtros */
-.categorias-filtros {
+.servicios-filtros {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -14,31 +13,32 @@
   margin-bottom: 3rem;
 }
 
-.categorias-filtros button {
+.servicios-filtros button {
   padding: 0.5rem 1.2rem;
   border-radius: 9999px;
   font-size: 0.9rem;
   font-weight: 500;
   border: none;
   cursor: pointer;
+  min-width: 300px
 }
 
-.categorias-filtros button.active {
+.servicios-filtros button.active {
   background: #000;
   color: #fff;
 }
 
-.categorias-filtros button:not(.active) {
+.servicios-filtros button:not(.active) {
   background: #e5e5e5;
   color: #444;
 }
 
-.categorias-filtros button:not(.active):hover {
+.servicios-filtros button:not(.active):hover {
   background: #d4d4d4;
 }
 
 /* Grid de tarjetas */
-.categorias-grid {
+.servicios-grid {
   display: grid;
   gap: 2rem;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));

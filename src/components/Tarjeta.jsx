@@ -1,21 +1,34 @@
 import "./Tarjeta.css";
 import PropTypes from "prop-types";
 
-const Tarjeta = ({ titulo, autor, precio, imagen }) => {
+const Tarjeta = ({ nombre, descripcion, items, imagen }) => {
   return (
     <div className="tarjeta">
-      <img src={imagen} alt={titulo} className="tarjeta-img" />
-      <h3 className="tarjeta-titulo">{titulo}</h3>
-      <p className="tarjeta-autor">por {autor}</p>
-      <p className="tarjeta-precio">${precio}</p>
+      <h2 className="tarjeta-titulo">{nombre}</h2>
+      <div className="tarjeta-cuerpo">
+        <div className="tarjeta-contenido">
+          <p className="tarjeta-descripcion">{descripcion}</p>
+          <h3 className="tarjeta-subtitulo">Nuestros servicios se basan en:</h3>
+          <ul className="tarjeta-items">
+            {items.map((item, index) => (
+              <li key={index} className="tarjeta-item">
+                {item}
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div className="tarjeta-imagen-container">
+          <img src={imagen} alt={nombre} className="tarjeta-img" />
+        </div>
+      </div>
     </div>
   );
 };
 
 Tarjeta.propTypes = {
-  titulo: PropTypes.string.isRequired,
-  autor: PropTypes.string.isRequired,
-  precio: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
+  nombre: PropTypes.string.isRequired,
+  descripcion: PropTypes.string.isRequired,
+  items: PropTypes.arrayOf(PropTypes.string).isRequired,
   imagen: PropTypes.string.isRequired,
 };
 
