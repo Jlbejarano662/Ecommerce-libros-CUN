@@ -1,5 +1,6 @@
 import React from "react";
 import "./Contactenos.css";
+import FormularioContacto from "../components/FormularioContacto"
 
 const Acerca = () => {
   return (
@@ -30,22 +31,7 @@ const Acerca = () => {
       {/* Sección de Contacto */}
       <section className="contacto">
         <h2>Contactarme</h2>
-        <form className="form-contacto">
-          <div className="form-row">
-            <input type="text" placeholder="Nombre" name="nombre" />
-            <input type="text" placeholder="Empresa" name="empresa" />
-          </div>
-          <input
-            type="email"
-            placeholder="Correo electrónico"
-            name="correo"
-          />
-          <textarea
-            placeholder="Escribe tu pregunta o mensaje"
-            name="mensaje"
-          ></textarea>
-          <button type="submit">Enviar</button>
-        </form>
+        <FormularioContacto />
       </section>
     </div>
   );
