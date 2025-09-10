@@ -1,5 +1,6 @@
 import React from "react";
 import "./Contactenos.css";
+import FormularioContacto from "../components/FormularioContacto"
 
 const Acerca = () => {
   return (
@@ -9,7 +10,7 @@ const Acerca = () => {
         <div className="acerca-texto">
           <h1>Acerca de nosotros</h1>
           <p>
-            En EspectIA nos especializamos en ofrecer servicios de calidad de
+            En InspectIA nos especializamos en ofrecer servicios de calidad de
             software y auditoría impulsados por inteligencia artificial. Nuestro
             enfoque combina experiencia técnica con tecnologías avanzadas de
             análisis, lo que nos permite identificar riesgos, optimizar procesos
@@ -30,22 +31,7 @@ const Acerca = () => {
       {/* Sección de Contacto */}
       <section className="contacto">
         <h2>Contactarme</h2>
-        <form className="form-contacto">
-          <div className="form-row">
-            <input type="text" placeholder="Nombre" name="nombre" />
-            <input type="text" placeholder="Empresa" name="empresa" />
-          </div>
-          <input
-            type="email"
-            placeholder="Correo electrónico"
-            name="correo"
-          />
-          <textarea
-            placeholder="Escribe tu pregunta o mensaje"
-            name="mensaje"
-          ></textarea>
-          <button type="submit">Enviar</button>
-        </form>
+        <FormularioContacto />
       </section>
     </div>
   );

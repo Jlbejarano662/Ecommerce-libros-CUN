@@ -13,7 +13,7 @@ const Footer = () => {
             <a href="#" aria-label="YouTube" style={{ display: 'flex', alignItems: 'center'}}><FaYoutube /></a>
             <a href="#" aria-label="Instagram" style={{ display: 'flex', alignItems: 'center'}}><FaInstagram /></a>
           </div>
-          <p>© 2025 EspectIA. Todos los derechos reservados.</p>
+          <p>© 2025 InspectIA. Todos los derechos reservados.</p>
         </div>
       </div>
     </footer>
