@@ -10,7 +10,7 @@ const Acerca = () => {
         <div className="acerca-texto">
           <h1>Acerca de nosotros</h1>
           <p>
-            En EspectIA nos especializamos en ofrecer servicios de calidad de
+            En InspectIA nos especializamos en ofrecer servicios de calidad de
             software y auditoría impulsados por inteligencia artificial. Nuestro
             enfoque combina experiencia técnica con tecnologías avanzadas de
             análisis, lo que nos permite identificar riesgos, optimizar procesos
