@@ -1,5 +1,6 @@
 .acerca-container {
-  max-width: 1200px;
+  width: 80vw;
+  max-width: 1800px;
   margin: 0 auto;
   padding: 2rem;
 }
@@ -26,7 +27,7 @@
 
 .acerca-texto p {
   text-align: left;
-  font-size: 1rem;
+  font-size: 1.5rem;
   line-height: 1.6;
   color: #333;
 }
