@@ -1,0 +1,88 @@
+.inicio-container {
+  font-family: sans-serif;
+  color: #333;
+}
+
+.hero {
+  background: url('/public/images/inicio.jpg') no-repeat center center/cover;
+  color: white;
+  padding: 120px 20px;
+  text-align: center;
+}
+
+.separador {
+  width: 100%;
+  height: 15px;
+  background: linear-gradient(to right, #0d0e0f, #00c3ff);
+  border: none;
+  margin: 60px 0;
+  border-radius: 2px;
+}
+
+.hero-text h1 {
+  font-size: 2.8em;
+}
+
+h2 {
+  font-size: 2.8em;
+}
+.btn-contacto {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.section {
+  display: flex;
+  gap: 20px;
+  padding: 60px 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.section img {
+  max-width: 500px;
+  border-radius: 8px;
+}
+
+.section-content img {
+  max-width: 500px;
+  border-radius: 8px;
+}
+.section-content {
+  max-width: 800px;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.section.alt {
+  background-color: #f7f7f7;
+}
+
+.normatividad {
+  text-align: center;
+  padding: 40px 20px;
+  background: #000;
+  color: white;
+}
+
+.iconos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 20px;
+  
+}
+
+.iconos img {
+  height: 80px;
+  border-radius: 50px;
+}
