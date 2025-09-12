@@ -4,10 +4,13 @@ import './Navbar.css';
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <div className="navbar-logo">Libros CUN</div>
+      <a href="/" class="navbar-logo">
+        <img src="images/iconLogo.png" alt="Logo de la empresa"></img>
+      </a>
       <ul className="navbar-links">
         <li><Link to="/">Inicio</Link></li>
-        <li><Link to="/categorias">Categorias</Link></li>
+        <li><Link to="/servicios">Servicios</Link></li>
+        <li><Link to="/contactenos">Contactenos</Link></li>
       </ul>
     </nav>
   );
