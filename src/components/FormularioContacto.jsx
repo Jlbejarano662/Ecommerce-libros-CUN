@@ -6,13 +6,13 @@ const FormularioContacto = () => {
     nombre: "",
     empresa: "",
     correo: "",
-    mensaje: ""
+    mensaje: "",
   });
 
   const handleChange = (e) => {
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     });
   };
 
@@ -20,7 +20,8 @@ const FormularioContacto = () => {
     e.preventDefault();
 
     try {
-      await axios.post("http://localhost:5000/send-email", formData);
+      /*await axios.post("http://localhost:5000/send-email", formData);*/
+      await axios.post("https://ecommerce-cun-backend-qi71fouv1-jlbejarano662s-projects.vercel.app/send-email", formData);
       alert("✅ Mensaje enviado correctamente");
       setFormData({ nombre: "", empresa: "", correo: "", mensaje: "" });
     } catch (error) {
