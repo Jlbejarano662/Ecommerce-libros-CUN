@@ -21,7 +21,7 @@ const FormularioContacto = () => {
 
     try {
       /*await axios.post("http://localhost:5000/send-email", formData);*/
-      await axios.post("https://ecommerce-cun-backend-qi71fouv1-jlbejarano662s-projects.vercel.app/send-email", formData);
+      await axios.post("https://ecommercecunbackend.vercel.app/send-email", formData);
       alert("✅ Mensaje enviado correctamente");
       setFormData({ nombre: "", empresa: "", correo: "", mensaje: "" });
     } catch (error) {
